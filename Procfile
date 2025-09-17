@@ -1,1 +1,1 @@
-web: gunicorn loans.wsgi --log-file -
+web: gunicorn craftcrest.wsgi --log-file -
