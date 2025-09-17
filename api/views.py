@@ -203,7 +203,7 @@ class CartItemViewSet(viewsets.ViewSet):
 class InventoryViewSet(viewsets.ModelViewSet):
     queryset = Inventory.objects.all()
     serializer_class = InventorySerializer
-    permission_classes = [IsAuthenticatedOrReadOnly]
+   
 
     def get_queryset(self):
         artisan_id = self.request.query_params.get('artisan_id')

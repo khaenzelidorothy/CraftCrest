@@ -39,8 +39,15 @@ LOCATIONIQ_API_KEY = os.getenv('LOCATIONIQ_API_KEY')
 load_dotenv(dotenv_path=BASE_DIR / '.env')
 
 DEBUG = False
+ALLOWED_HOSTS = ["*"]
 
-ALLOWED_HOSTS = ['*']
+
+SECRET_KEY = config('SECRET_KEY', default='craftcrestapp@2025')
+
+
+
+
+
 
 
 
