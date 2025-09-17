@@ -36,10 +36,6 @@ DARAJA_B2C_RESULT_URL = os.getenv("DARAJA_B2C_RESULT_URL")
 
 LOCATIONIQ_API_KEY = os.getenv('LOCATIONIQ_API_KEY')
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-# Load environment variables from .env file at project root
 load_dotenv(dotenv_path=BASE_DIR / '.env')
 
 DEBUG = False
@@ -47,6 +43,7 @@ ALLOWED_HOSTS = ["*"]
 
 
 SECRET_KEY = config('SECRET_KEY', default='craftcrestapp@2025')
+
 
 
 
