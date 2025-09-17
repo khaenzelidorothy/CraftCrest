@@ -40,7 +40,7 @@ load_dotenv(dotenv_path=BASE_DIR / '.env')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 
 
