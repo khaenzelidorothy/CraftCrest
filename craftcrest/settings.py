@@ -18,9 +18,7 @@ from dotenv import load_dotenv
 from datetime import timedelta
 from decouple import config  
 
-load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 
@@ -44,15 +42,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Load environment variables from .env file at project root
 load_dotenv(dotenv_path=BASE_DIR / '.env')
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
+DEBUG = False
 
-SECRET_KEY = config('SECRET_KEY', default='craftcrestapp@2025')
-
-
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 
