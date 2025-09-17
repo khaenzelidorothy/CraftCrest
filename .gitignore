@@ -8,12 +8,15 @@ yarn-error.log*
 dist/
 build/
 out/
+staticfiles/
+/static/
 
 # Environment files
 .env
 .env.*
 craftenv/
 db.sqlite3/
+db.sqlite3
 
 # OS generated files
 .DS_Store
@@ -35,3 +38,4 @@ logs/
 *.tmp
 __pycache__/
 *.pycache/
+*staticfiles/
