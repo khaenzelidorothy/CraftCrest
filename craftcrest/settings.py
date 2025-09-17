@@ -52,7 +52,7 @@ SECRET_KEY = config('SECRET_KEY', default='craftcrestapp@2025')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 
 
